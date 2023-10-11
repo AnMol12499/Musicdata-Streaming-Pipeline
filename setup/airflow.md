@@ -1,20 +1,19 @@
 ## Setup Airflow VM
 
-![airflow](../images/airflow.jpg)
 
 We will setup airflow on docker in a dedicated compute instance. dbt is setup inside airflow.
 
 - Establish SSH connection
 
   ```bash
-  ssh streamify-airflow
+  ssh Musicdata-Streaming-Pipeline-airflow
   ```
 
 - Clone git repo
 
   ```bash
-  git clone https://github.com/ankurchavda/streamify.git && \
-  cd streamify
+  git clone https://github.com/AnMol12499/Musicdata-Streaming-Pipeline.git && \
+  cd Musicdata-Streaming-Pipeline
   ```
 - Install anaconda, docker & docker-compose.
 
@@ -42,7 +41,7 @@ We will setup airflow on docker in a dedicated compute instance. dbt is setup in
 - Start Airflow. (This shall take a few good minutes, grab a coffee!)
 
   ```bash
-  bash ~/streamify/scripts/airflow_startup.sh && cd ~/streamify/airflow
+  bash ~/Musicdata-Streaming-Pipeline/scripts/airflow_startup.sh && cd ~/Musicdata-Streaming-Pipeline/airflow
   ```
 
 - Airflow should be available on port `8080` a couple of minutes after the above setup is complete. Login with default username & password as **airflow**.
@@ -66,7 +65,7 @@ The setup has two dags
   - Trigger first and only once to load a onetime song file into BigQuery
 ![songs_dag](../images/songs_dag.png)
 
-- `streamify_dag`
+- `Musicdata-Streaming-Pipeline_dag`
   - Trigger after `load_songs_dag` to make sure the songs table table is available for the transformations
   - This dag will run hourly at the 5th minute and perform transformations to create the dimensions and fact.
 ![streamify_dag](../images/streamify_dag.png)
