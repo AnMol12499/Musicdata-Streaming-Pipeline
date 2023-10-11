@@ -1,19 +1,17 @@
 ## Setup Spark Cluster
 
-![spark](../images/spark.jpg)
-
 We will start the Spark Streaming process in the DataProc cluster we created to communicate with the Kafka VM instance over the port `9092`. Remember, we opened port 9092 for it to be able to accept connections.
 
 - Establish SSH connection to the **master node**
 
   ```bash
-  ssh streamify-spark
+  ssh Musicdata-Streaming-Pipeline-spark
   
 - Clone git repo
 
   ```bash
-  git clone https://github.com/ankurchavda/streamify.git && \
-  cd streamify/spark_streaming
+  git clone https://github.com/AnMol12499/Musicdata-Streaming-Pipeline.git && \
+  cd Musicdata-Streaming-Pipeline/spark_streaming
   ```
 
 - Set the evironment variables -
