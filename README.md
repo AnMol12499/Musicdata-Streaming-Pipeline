@@ -50,8 +50,6 @@ If you already have a Google Cloud account and a working terraform setup, you ca
 
 ### Get Going!
 
-A video walkthrough of how I run my project - [YouTube Video](https://youtu.be/vzoYhI8KTlY)
-
 - Procure infra on GCP with Terraform - [Setup](setup/terraform.md)
 - (Extra) SSH into your VMs, Forward Ports - [Setup](setup/ssh.md)
 - Setup Kafka Compute Instance and start sending messages from Eventsim - [Setup](setup/kafka.md)
@@ -59,20 +57,3 @@ A video walkthrough of how I run my project - [YouTube Video](https://youtu.be/v
 - Setup Airflow on Compute Instance to trigger the hourly data pipeline - [Setup](setup/airflow.md)
 
 
-### Debug
-
-If you run into issues, see if you find something in this debug [guide](setup/debug.md).
-### How can I make this better?!
-A lot can still be done :).
-- Choose managed Infra
-  - Cloud Composer for Airflow
-  - Confluent Cloud for Kafka
-- Create your own VPC network
-- Build dimensions and facts incrementally instead of full refresh
-- Write data quality tests
-- Create dimensional models for additional business processes
-- Include CI/CD
-- Add more visualizations
-
-### Special Mentions
-I'd like to thank the [DataTalks.Club](https://datatalks.club) for offering this Data Engineering course for completely free. All the things I learnt there, enabled me to come up with this project. If you want to upskill on Data Engineering technologies, please check out the [course](https://github.com/DataTalksClub/data-engineering-zoomcamp). :)
