@@ -2,8 +2,6 @@
 
 ### Initial Setup
 
-Checkout this [video](https://www.youtube.com/watch?v=Hajwnmj0xfQ&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=11&t=3s)
-
 1. Create an account with your Google email ID 
 2. Setup your first [project](https://console.cloud.google.com/) if you haven't already
     * eg. "Streamify", and note down the "Project ID" (we'll use this later when deploying infra with TF)
@@ -37,4 +35,3 @@ Checkout this [video](https://www.youtube.com/watch?v=Hajwnmj0xfQ&list=PL3MmuxUb
    export GOOGLE_APPLICATION_CREDENTIALS="<path/to/your/service-account-authkeys>.json"
    ```
 
-#### [Installation Reference - DataTalks Club](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/week_1_basics_n_setup/1_terraform_gcp/2_gcp_overview.md#initial-setup)
