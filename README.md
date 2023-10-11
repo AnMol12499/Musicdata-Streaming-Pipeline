@@ -21,6 +21,9 @@ A data pipeline with Kafka, Spark Streaming, dbt, Docker, Airflow, Terraform, GC
     g. Understanding model bias
     h. Apply cross-validation to evaluate our models
 
+   
+## Part 1
+
 ### Dataset
 
 [Eventsim](https://github.com/Interana/eventsim) is a program that generates event data to replicate page requests for a fake music web site. The results look like real use data, but are totally fake. The docker image is borrowed from [viirya's fork](https://github.com/viirya/eventsim) of it, as the original project has gone without maintenance for a few years now.
