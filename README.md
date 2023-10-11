@@ -10,16 +10,16 @@ A data pipeline with Kafka, Spark Streaming, dbt, Docker, Airflow, Terraform, GC
 
 2. In the second part (as extension of part 1), we will apply machine learning algorithms to classify songs into genres using their meta data compiled by The Echo Nest.
 
-We will be:
-
-1. Preparing the dataset
-2. Splitting them into train and test sets
-3. Normalize the data
-4. Apply PCA on scaled data
-5. Train decision tree and logistic regression compare the performance
-6. Balance the data for better performance
-7. Understanding model bias
-8. Apply cross-validation to evaluate our models
+    We will be:
+    
+    a. Preparing the dataset
+    b. Splitting them into train and test sets
+    c. Normalize the data
+    d. Apply PCA on scaled data
+    e. Train decision tree and logistic regression compare the performance
+    f. Balance the data for better performance
+    g. Understanding model bias
+    h. Apply cross-validation to evaluate our models
 
 ### Dataset
 
