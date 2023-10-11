@@ -14,7 +14,7 @@ with DAG(
     schedule_interval="@once", #At the 5th minute of every hour
     start_date=datetime(2022,3,20),
     catchup=True,
-    tags=['streamify', 'dbt']
+    tags=['Musicdata-Streaming-Pipeline', 'dbt']
 ) as dag:
 
     dbt_test_task = BashOperator(
