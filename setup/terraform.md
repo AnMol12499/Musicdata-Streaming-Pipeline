@@ -3,8 +3,8 @@
 Clone the repository in your local machine.
 
 ```bash
-git clone https://github.com/ankurchavda/streamify.git && \
-cd streamify/terraform
+git clone https://github.com/AnMol12499/Musicdata-Streaming-Pipeline.git && \
+cd Musicdata-Streaming-Pipeline/terraform
 ```
 
 Spin up the Infra -
