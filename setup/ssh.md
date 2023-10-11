@@ -1,6 +1,5 @@
 ## VM SSH Setup
 
-- I recommend watching the first few minutes of [this video by Alexey](https://www.youtube.com/watch?v=ae-CV2KfoN0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb) for understanding how it's done. You can then follow the below steps.
 
 - Create an ssh key in your local system in the `.ssh` folder - [Guide](https://cloud.google.com/compute/docs/connect/create-ssh-keys#linux-and-macos)
 
@@ -45,5 +44,5 @@
     ssh Musicdata-Streaming-Pipeline-airflow
     ```
 
-- You will have to forward ports from your VM to your local machine for you to be able to see Kafka, Airflow UI. Check how to do that [here](https://youtu.be/ae-CV2KfoN0?t=1074)
+- You will have to forward ports from your VM to your local machine for you to be able to see Kafka, Airflow UI. Check how to do that.
 
