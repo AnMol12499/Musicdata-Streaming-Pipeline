@@ -1,25 +1,24 @@
 ## Setup Kafka VM
 
-![kafka](../images/kafka.jpg)
 
 We will setup Kafka and eventsim in two separate docker processes in a dedicated compute instance. Eventsim will communicate with port `9092` of the `broker` container of Kafka to send events.
 
 - Establish SSH connection
 
   ```bash
-  ssh streamify-kafka
+  ssh Musicdata-Streaming-Pipeline-kafka
   ```
 
 - Clone git repo and cd into Kafka folder
 
   ```bash
-  git clone https://github.com/ankurchavda/streamify.git && \
+  git clone https://github.com/AnMol12499/Musicdata-Streaming-Pipeline.git && \
   ```
 
 - Install anaconda, docker & docker-compose.
 
   ```bash
-  bash ~/streamify/scripts/vm_setup.sh && \
+  bash ~/Musicdata-Streaming-Pipeline/scripts/vm_setup.sh && \
   exec newgrp docker
   ```
 
@@ -36,7 +35,7 @@ We will setup Kafka and eventsim in two separate docker processes in a dedicated
 - Start Kafka 
 
   ```bash
-  cd ~/streamify/kafka && \
+  cd ~/Musicdata-Streaming-Pipeline/kafka && \
   docker-compose build && \
   docker-compose up 
   ```
@@ -48,7 +47,7 @@ We will setup Kafka and eventsim in two separate docker processes in a dedicated
 - Open another terminal session for the Kafka VM and start sending messages to your Kafka broker with Eventsim
 
   ```bash
-  bash ~/streamify/scripts/eventsim_startup.sh
+  bash ~/Musicdata-Streaming-Pipeline/scripts/eventsim_startup.sh
   ```
 
   This will start creating events for 1 Million users spread out from the current time to the next 24 hours. 
