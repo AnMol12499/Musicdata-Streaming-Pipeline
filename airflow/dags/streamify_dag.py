@@ -37,7 +37,7 @@ default_args = {
 }
 
 with DAG(
-    dag_id = f'streamify_dag',
+    dag_id = f'Musicdata-Streaming-Pipeline_dag',
     default_args = default_args,
     description = f'Hourly data pipeline to generate dims and facts for streamify',
     schedule_interval="5 * * * *", #At the 5th minute of every hour
@@ -45,7 +45,7 @@ with DAG(
     catchup=False,
     max_active_runs=1,
     user_defined_macros=MACRO_VARS,
-    tags=['streamify']
+    tags=['Musicdata-Streaming-Pipeline']
 ) as dag:
     
     initate_dbt_task = BashOperator(
@@ -54,7 +54,7 @@ with DAG(
     )
 
     execute_dbt_task = BashOperator(
-        task_id = 'dbt_streamify_run',
+        task_id = 'dbt_Musicdata-Streaming-Pipeline_run',
         bash_command = 'cd /dbt && dbt deps && dbt run --profiles-dir . --target prod'
     )
 
