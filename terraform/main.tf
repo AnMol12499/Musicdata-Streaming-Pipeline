@@ -33,7 +33,7 @@ resource "google_compute_firewall" "port_rules" {
 }
 
 resource "google_compute_instance" "kafka_vm_instance" {
-  name                      = "streamify-kafka-instance"
+  name                      = "Musicdata-Streaming-Pipeline-kafka-instance"
   machine_type              = "e2-standard-4"
   tags                      = ["kafka"]
   allow_stopping_for_update = true
@@ -54,7 +54,7 @@ resource "google_compute_instance" "kafka_vm_instance" {
 
 
 resource "google_compute_instance" "airflow_vm_instance" {
-  name                      = "streamify-airflow-instance"
+  name                      = "Musicdata-Streaming-Pipeline-airflow-instance"
   machine_type              = "e2-standard-4"
   allow_stopping_for_update = true
 
@@ -91,7 +91,7 @@ resource "google_storage_bucket" "bucket" {
 
 
 resource "google_dataproc_cluster" "mulitnode_spark_cluster" {
-  name   = "streamify-multinode-spark-cluster"
+  name   = "Musicdata-Streaming-Pipeline-multinode-spark-cluster"
   region = var.region
 
   cluster_config {
