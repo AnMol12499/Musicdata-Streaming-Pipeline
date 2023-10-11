@@ -1,7 +1,7 @@
 streamify:
   outputs:
     dev:
-      dataset: streamify_stg
+      dataset: Musicdata-Streaming-Pipeline_stg
       fixed_retries: 1
       keyfile: /.google/credentials/google_credentials.json
       location: us-central1
@@ -12,7 +12,7 @@ streamify:
       timeout_seconds: 300
       type: bigquery
     prod:
-      dataset: streamify_prod
+      dataset: Musicdata-Streaming-Pipeline_prod
       fixed_retries: 1
       keyfile: /.google/credentials/google_credentials.json
       location: us-central1
