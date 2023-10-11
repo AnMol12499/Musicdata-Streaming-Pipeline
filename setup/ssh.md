@@ -15,17 +15,17 @@
 - Copy the following snippet and replace with External IP of the Kafka, Spark (Master Node), Airflow VMs. Username and path to the ssh private key
 
     ```bash
-    Host streamify-kafka
+    Host Musicdata-Streaming-Pipeline-kafka
         HostName <External IP Address>
         User <username>
         IdentityFile <path/to/home/.ssh/keyfile>
 
-    Host streamify-spark
+    Host Musicdata-Streaming-Pipeline-spark
         HostName <External IP Address Of Master Node>
         User <username>
         IdentityFile <path/to/home/.ssh/keyfile>
 
-    Host streamify-airflow
+    Host Musicdata-Streaming-Pipeline-airflow
         HostName <External IP Address>
         User <username>
         IdentityFile <path/to/home/.ssh/gcp>
@@ -34,15 +34,15 @@
 - Once you are setup, you can simply SSH into the servers using the below commands in separate terminals. Do not forget to change the IP address of VM restarts.
 
     ```bash
-    ssh streamify-kafka
+    ssh Musicdata-Streaming-Pipeline-kafka
     ```
 
     ```bash
-    ssh streamify-spark
+    ssh Musicdata-Streaming-Pipeline-spark
     ```
 
     ```bash
-    ssh streamify-airflow
+    ssh Musicdata-Streaming-Pipeline-airflow
     ```
 
 - You will have to forward ports from your VM to your local machine for you to be able to see Kafka, Airflow UI. Check how to do that [here](https://youtu.be/ae-CV2KfoN0?t=1074)
